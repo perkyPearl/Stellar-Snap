@@ -1,0 +1,52 @@
+header{
+    display: flex;
+    width: 100%;
+}
+nav{
+    justify-content: space-between;
+    width: 100%;
+}
+#leftoptions{
+    display: flex;
+    margin: 0px 8px;
+    
+     align-items: center;
+}
+#rightoptions{
+    display: flex;
+    
+}
+.optionscontainer{
+    padding: 12px 0px;
+    font-weight: 500;
+}
+.loginbutton{
+    border-radius: 40px;
+    background-color: #E60023;
+    width: fit-content;
+    padding: 2px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 13px;
+}
+.loginbuttonlabel{
+    color: white;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+.signupbutton{
+    border-radius: 40px;
+    background-color: #EFEFEF;
+    width: fit-content;
+    padding: 2px;
+    align-items: center;
+    display: flex; 
+    box-sizing: border-box;  
+    margin-right: 13px;
+}
+.signupbuttonlabel{
+    color: #111111;
+    font-weight: 500;
+    padding: 8px 12px;
+}
