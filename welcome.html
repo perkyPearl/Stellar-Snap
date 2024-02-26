@@ -2,88 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinterest</title>
+  <link rel="stylesheet" href="welcome.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="LogIn.css" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="leftoptions">
-                <img src="images/logo.png" alt="logo" id="logo">
-            
+  <header>
+    <nav>
+      <div id="leftoptions">
+        <img src="images/logo.png" alt="logo" id="logo" />
 
-                <div class="optionscontainer">
-                    <a href="#">Today</a>
-                </div>
-                <div class="optionscontainer">
+        <div class="optionscontainer">
+          <a href="#">Today</a>
+        </div>
+        <div class="optionscontainer">
+          <a href="#">Watch</a>
+        </div>
 
-                    <a href="#">Watch</a>
-                </div>
+        <div class="optionscontainer">
+          <a href="#">Explore</a>
+        </div>
+      </div>
+      <div id="rightoptions">
+        <div class="optionscontainer">
+          <a href="#">About</a>
 
-                <div class="optionscontainer">
-                    <a href="#">Explore</a>
-                </div>
-            </div>
+          <a href="#">Business</a>
 
-            <!-- <input type="text" id="SearchBar" placeholder="Search" alt="Search"> -->
-            <!-- <button id="SearchButton">Search</button> -->
+          <a href="#">Blog</a>
+        </div>
 
-            <div id="rightoptions">
-                <div class="optionscontainer">
-                    <a href="#">About</a>
-                
-                    <a href="#">Business</a>
-                
-                    <a href="#">Blog</a>
-                </div>
+        <div class="loginbutton">
+          <div class="loginbuttonlabel">Log In</div>
+        </div>
 
-                <div class="loginbutton">
-                    <div class="loginbuttonlabel">Log In</div>
-                </div>
+        <div class="signupbutton">
+          <div class="signupbuttonlabel">Sign Up</div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                <div class="signupbutton">
-                    <div class="signupbuttonlabel">Sign Up</div>
-                </div>
-            </div>
-            <!-- <img src="images/notification.svg" alt="notification" id="notification">
-            <img src="images/messaging.png" alt="" id="messaging">
-            <img src="images/user.jpg" alt="" id="user-profile">
-            <img src="images/arrow-down.png" id="arrow-down"> -->
-            
-        </nav>
-    </header>
-<!-- Section 1 -->
+  <div class="container">
     <section>
-        <div class="fixedheading">
-            <div class="fixedheadingtext">Get your next</div>
-        </div>
-        <div class="changingheading">
-            <div class="changingtextdiv">
-                <p class="changingtext" style=" color: rgb(194, 139, 0);">chai time snacks idea</p>
-            </div>
-            <div class="changingtextdiv">
-                <p class="changingtext" style="color:rgb(0,118,211);transform:translateY(-79.9823px); opacity:0.000443491;z-index:2">home decor idea</p>
-            </div>
-            <div class="changingtextdiv">
-                <p class="changingtext"style="color:rgb(81,140,123);transform:translateY(-35.7849px);opacity:0.896423;z-index:0">outfit idea</p>
-            </div>
-            <div class="changingtextdiv">
-                <p class="changingtext" style="color: rgb(80, 122, 87); transform:translateY(0px);opacity:0;z-index:0">DIY idea</p>
-            </div>
-        </div>
-        <div class="headingdots">
-            <ul>
-                <li><button class="headingbtn"></button></li>
-                <li><button class="headingbtn"></button></li>
-                <li><button class="headingbtn"></button></li>
-                <li><button class="headingbtn"></button></li>
-            </ul>
-        </div>
+      <div>
+        <h1>Welcome to Stellar Snap - Your Creative Photo Haven!</h1>
+        <h2>
+          Explore, share, and discover stunning visuals from a community of
+          passionate photographers.
+        </h2>
+        <button>Explore Now</button>
+      </div>
     </section>
+    <section>
+      <div>
+        <h1>Discover What's Trending Now</h1>
+        <h2>
+          Explore the latest and most popular photos shared by our vibrant
+          community
+        </h2>
+        <button>Explore Trending Photos</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1>Dive into Diverse Collections</h1>
+        <h2>
+          Browse through curated categories and find the perfect visual
+          inspiration for every mood and interest.
+        </h2>
+        <button>Explore Categories</button>
+      </div>
+    </section>
+    <section class="growing-container">
+      <div>
+        <h1>Join Our Growing Community</h1>
+        <h2>
+          Become a part of our creative community. Share your passion, connect
+          with like-minded individuals, and inspire others
+        </h2>
+      </div>
+      <div>
+        <div class="structure">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbIePDitj7ebNsAE7eELFII2HGW6RkIFfFVAAvsuwaC-RRX8Wv"
+            alt="" height="35" class="img1" />
+          <h1 class="head1">Welcome to Pinterest</h1>
+          <p class="para1">Email</p>
+          <input type="email" placeholder="Email" class="input1" />
+          <p class="para2">Password</p>
+          <input type="password" placeholder="Password" class="input2" />
+          <br />
+          <a href="#" class="anchor1">Forgot your password?</a>
+          <center><button class="but1">Log in</button></center>
+          <p class="para3">OR</p>
+          <center>
+            <button class="but2">
+              <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/U7MAWJlE6hZ.png" alt="" width="24"
+                height="24" />Continue with Facebook
+            </button>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          </center>
+          <pre class="pre1">By continuing, you agree to Pinterest's 
+  <b class="bold1">Terms of Service</b> and acknowledge you've read our 
+  <b class="bold1"> Privacy Policy. Notice at collection.</b> 
+          </pre>
+          <a href="#" class="anchor2">Not on Pinterest yet? Sign up</a>
+          <div class="div2">
+            Are you a business?
+            <a href="#" class="anchor3">Get started here!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Help</a>
+    <a href="#">Iphone App</a>
+    <a href="#">Android App</a>
+    <a href="#">Users</a>
+    <a href="#">Collections</a>
+    <a href="#">Shopping</a>
+    <a href="#">Today</a>
+    <a href="#">Explore</a>
+    <a href="#">Watch</a>
+    <a href="#">Shop</a>
+  </footer>
 </body>
 
 </html>

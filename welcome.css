@@ -1,130 +1,120 @@
-header{
-    display: flex;
-    width: 100%;
-}
-nav{
-    justify-content: space-between;
-    width: 100%;
-}
-#leftoptions{
-    display: flex;
-    margin: 0px 8px;
-    
-     align-items: center;
-}
-#rightoptions{
-    display: flex;
-    
-}
-.optionscontainer{
-    padding: 12px 0px;
-    font-weight: 500;
-}
-.loginbutton{
-    border-radius: 40px;
-    background-color: #E60023;
-    width: fit-content;
-    padding: 2px;
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-    margin-right: 13px;
-}
-.loginbuttonlabel{
-    color: white;
-    font-weight: 500;
-    padding: 8px 12px;
-}
-.signupbutton{
-    border-radius: 40px;
-    background-color: #EFEFEF;
-    width: fit-content;
-    padding: 2px;
-    align-items: center;
-    display: flex; 
-    box-sizing: border-box;  
-    margin-right: 13px;
-}
-.signupbuttonlabel{
-    color: #111111;
-    font-weight: 500;
-    padding: 8px 12px;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-section{
-    height: calc(0px + 30vh);
-    width: 100%;
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+header {
+  display: flex;
+  width: 100%;
 }
-.fixedheading{
-    text-align: left;
-}
-.fixedheadingtext{
-    margin: 2px;
-    font-size: 60px;
-    font-weight: 600;
-    text-align: center;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
-    word-wrap: break-word;
-    font-family: var(--font-family-default-latin);
-    
-}
-.changingheading{
-    height: 60px;
-    width: 65%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-    margin-bottom: var(--space-800);
-    margin-top: var(--space-400);
-    flex-direction: row;
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
-}
-.changingtextdiv{
-    text-align: left;
-    word-wrap: break-word;
-   
-}
-.changingtext{
-    font-size: 60px;
-    font-weight: 600;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    left: 0px;
-    margin: 0px;
-    transform: translateY(-80px);
-    opacity: 0;
-    z-index: 0;
 
+nav {
+  justify-content: space-between;
+  width: 100%;
 }
-.headingdots ul{
-    display: flex;
+
+#leftoptions {
+  display: flex;
+  margin: 0px 8px;
+  align-items: center;
 }
-.headingdots li{
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
+
+#rightoptions {
+  display: flex;
 }
-.headingbtn{
-    background: rgb(225, 225, 225);
-    display: inline-block;
-    padding: 5px;
-    height: 10px;
-    border-radius: 50px;
-    margin: 6px;
-    outline: none;
-    border-style: none;
-    vertical-align: middle;
-    cursor: pointer;
-    overflow: visible;
-    line-height: normal;
-    
+
+.optionscontainer {
+  padding: 12px 0px;
+  font-weight: 500;
+}
+
+.loginbutton {
+  border-radius: 40px;
+  background-color: #e60023;
+  width: fit-content;
+  padding: 2px;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 13px;
+}
+
+.loginbuttonlabel {
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+.signupbutton {
+  border-radius: 40px;
+  background-color: #efefef;
+  width: fit-content;
+  padding: 2px;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 13px;
+}
+
+.signupbuttonlabel {
+  color: #111111;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container section:nth-of-type(1) {
+  background-color: rgb(238, 255, 0);
+}
+
+.container section:nth-of-type(2) {
+  background-color: rgb(255, 0, 0);
+}
+
+.container section:nth-of-type(3) {
+  background-color: rgb(0, 255, 17);
+}
+
+.container section:nth-of-type(4) {
+  background-color: rgb(21, 0, 255);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(228, 228, 228);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+  color: black;
 }
