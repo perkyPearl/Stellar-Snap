@@ -48,45 +48,121 @@
   </header>
 
   <div class="container">
-    <section>
-      <div>
-        <h1 class="welcomesection1h1">Welcome to<br> <span>Stellar Snap </span><br>- Your Creative Photo Haven!</h1>
+    <section class="section1">
+
+      <div class="welcomesection1">
+
+        <h1 class="welcomesection1h1">Welcome to<br> <span>"Stellar Snap"</span><br>- Your Creative Photo Haven!</h1>
         <h2>
+
           Explore, share, and discover stunning visuals from a community of
           passionate photographers.
         </h2>
-        <button>Explore Now</button>
+
+        <center>
+          <button class="btn">
+            <strong>Explore Now</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+        </center>
       </div>
     </section>
-    <section>
-      <div>
-        <h1>Discover What's Trending Now</h1>
-        <h2>
-          Explore the latest and most popular photos shared by our vibrant
-          community
-        </h2>
-        <button>Explore Trending Photos</button>
+    <section class="section2">
+
+
+      <div class="section2div">
+        <h1><span>Discover</span>
+          <p>WHAT'S TRENDING NOW</p>
+        </h1>
+        <marquee loop="-1" direction="left" scrollamount="40">
+          <div class="section2images">
+            <img src="/welcome page images/pexels-irina-iriser-1590549.jpg" alt="">
+            <img src="/welcome page images/pexels-keshan-viduranga-4185785.jpg" alt="">
+            <img src="/welcome page images/pexels-life-folk-4620385.jpg" alt="">
+            <img src="/welcome page images/pexels-david-bartus-610293.jpg" alt="">
+            <img src="/welcome page images/pexels-pixabay-235986.jpg" alt="">
+            <img src="/welcome page images/pexels-pixabay-276092.jpg" alt="">
+            <img src="/welcome page images/pexels-andrea-piacquadio-3771842.jpg" alt="">
+          </div>
+        </marquee>
+        <div class="section2afterimgtext">
+
+          <ul>
+            <li>Explore the latest and </li>
+            <li> most popular photos</li>
+            <li> by our vibrant
+              community</li>
+          </ul>
+          <div class="buttoncontainer">
+            <button>Explore Trending Photos</button>
+            <span class="arrow first">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </span>
+            <span class="arrow second">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </span>
+            <span class="arrow third">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- <hr color="black" width="100%" style="box-shadow:15px 10px 2px white;"> -->
     <section>
-      <div>
-        <h1>Dive into Diverse Collections</h1>
-        <h2>
-          Browse through curated categories and find the perfect visual
-          inspiration for every mood and interest.
-        </h2>
-        <button>Explore Categories</button>
+      <div class="section3div">
+        <div class="section3divh1">
+          <h1>Dive into <br> Diverse Collections</h1>
+        </div>
+        <div class="section3divh2">
+
+          <div class="section3divh2text">
+            <h2>
+              Browse through curated categories<br> and find the perfect<br> visual
+              inspiration for <br> every mood and interest.
+            </h2>
+
+            <button>Explore Categories</button>
+          </div>
+          <div class="section3divh2imgs">
+            <img src="/welcome page images/New folder/pexels-aviv-perets-3274899.jpg" alt="">
+            <img src="/welcome page images/New folder/pexels-eberhard-grossgasteiger-2098427.jpg" alt="">
+            <img src="/welcome page images/New folder/pexels-felix-mittermeier-2832071.jpg" alt="">
+            <!-- <img src="/welcome page images/New folder/pexels-matej-čurlík-3663482.jpg" alt=""> -->
+            <!-- <img src="/welcome page images/New folder/pexels-mikhail-nilov-7672252.jpg" alt=""> -->
+            <!-- <img src="/welcome page images/New folder/pexels-sam-kolder-2387877.jpg" alt=""> -->
+          </div>
+        </div>
       </div>
     </section>
     <section class="growing-container">
-      <div>
+      <div class="section4text">
         <h1>Join Our Growing Community</h1>
         <h2>
-          Become a part of our creative community. Share your passion, connect
-          with like-minded individuals, and inspire others
+          Become a part of <br>our creative community. <br>Share your passion, <br>connect
+          with like-minded individuals, <br>and inspire others
         </h2>
       </div>
-      <div>
+      <div class="login-form">
         <div class="structure">
           <img
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbIePDitj7ebNsAE7eELFII2HGW6RkIFfFVAAvsuwaC-RRX8Wv"
@@ -108,8 +184,8 @@
             <div class="g-signin2" data-onsuccess="onSignIn"></div>
           </center>
           <pre class="pre1">By continuing, you agree to Pinterest's 
-  <b class="bold1">Terms of Service</b> and acknowledge you've read our 
-  <b class="bold1"> Privacy Policy. Notice at collection.</b> 
+            <b class="bold1">Terms of Service</b> and acknowledge you've read our 
+            <b class="bold1"> Privacy Policy. Notice at collection.</b> 
           </pre>
           <a href="#" class="anchor2">Not on Pinterest yet? Sign up</a>
           <div class="div2">
@@ -134,6 +210,8 @@
     <a href="#">Watch</a>
     <a href="#">Shop</a>
   </footer>
+
+
 </body>
 
 </html>
