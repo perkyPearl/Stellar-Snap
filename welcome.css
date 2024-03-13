@@ -11,35 +11,20 @@ header {
   background-color: white;
   z-index: 100;
 }
-
-nav img {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  border: 8px solid white;
-}
-
-nav img:hover {
-  border: 8px solid rgba(214, 214, 214, 0.388);
-}
-
 #user-profile {
   height: 28px;
   width: 28px;
 }
-
 nav {
   display: flex;
   padding: 5px;
   align-items: center;
-  height: 50px;
+  height: 70px;
 }
-
 nav nav a,
 nav img {
   margin: 10px;
 }
-
 .SearchArea {
   display: flex;
 }
@@ -162,6 +147,10 @@ nav {
   margin: 0px 8px;
   align-items: center;
 }
+#leftoptions img{
+  height: 120px;
+  width: 140px;
+}
 
 #rightoptions {
   display: flex;
@@ -174,7 +163,7 @@ nav {
 
 .loginbutton {
   border-radius: 40px;
-  background-color: #e60023;
+  background-color:#8F51EA;
   width: fit-content;
   padding: 2px;
   align-items: center;
@@ -239,9 +228,9 @@ section {
   background-color: rgba(90, 87, 87, 0.541);
 }
 
-.container section:nth-of-type(3) {
+/* .container section:nth-of-type(3) {
   background-color: rgb(0, 255, 17);
-}
+} */
 
 /* .container section:nth-of-type(4) { */
   /* background-color: rgb(21, 0, 255); */
@@ -668,22 +657,28 @@ strong {
 .section3divh2{
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-image:url("https://lh3.googleusercontent.com/proxy/vdVeiL8gKbLFyU3N6ZNkEggMEJCb1_e4FuxwGWlLUq0t2zYNcDQVTRR1ai6zhVIO4PnF-9OY2m-J7d0DazG9UGDUK_RyjF_QXAZH5FMuUo5_6McLNU2x-DRTsZ4ykG6YWOwkNtbXeUwzex-07g");
+  background-repeat: no-repeat;
+  background-size:23.5vw 50vh;
+  background-blend-mode: lighten;
+  align-content: center;
   justify-content: space-between;
-  
+  z-index: 1;
 }
 .section3divh2text{
   padding: 20px;
-  background-color: white;
+  background-color:transparent;
   line-height: 40px;
 }
 .section3divh2text h2{
   font-size: 20px ;
   font-weight: 700;  
-  filter: drop-shadow(5px 3px 2px  greenyellow);
+  /* filter: drop-shadow(5px 3px 2px  greenyellow); */
   padding: 15px;
   /* animation: slide-right 4s ease-in; */
   width: fit-content;
+  color: #efefef;
+  
 }
 .section3divh2text button {
   padding: 17px 40px;
@@ -702,9 +697,9 @@ strong {
 
 .section3divh2text button:hover {
   letter-spacing: 3px;
-  background-color: greenyellow;
+  background-color: rgb(214, 16, 218);
   color: hsl(0, 3%, 6%);
-  box-shadow: greenyellow 0px 7px 29px 0px;
+  box-shadow: rgb(206, 47, 255) 0px 7px 29px 0px;
 }
 
 .section3divh2text button:active {
@@ -719,13 +714,17 @@ strong {
   display: flex;
   flex-direction: row;
   height:50vh;
-  width: 100%;
+  width: fit-content;
   z-index: 0;
-  justify-content: flex-end;
-  animation-iteration-count: infinite;
+  /* justify-content: flex-end; */
+  /* animation-iteration-count: infinite; */
+}
+.growing-container{
+  background-image: url("https://media.istockphoto.com/id/498478219/photo/stars-at-night-sky.webp?b=1&s=170667a&w=0&k=20&c=h9OIWHvnqDfqgJp-6fwXcfitObtsEl1GowkqmF-mh44=");
+  background-size: cover;
+  opacity: 1;
 }
 .section4text{
-  background-color: #111111;
   color: white;
   text-align: center;
   padding: 10px;
@@ -733,7 +732,7 @@ strong {
   justify-content: center;
   align-items: center;
   padding-left: 100px;
-  
+  z-index: 1;  
 }
 .section4text h1{
   font-size: 40px;
@@ -759,10 +758,7 @@ strong {
   padding: 20px;
 
 }
-.login-form{
 
-
-}
 footer {
   position: sticky;
   bottom: 0;
