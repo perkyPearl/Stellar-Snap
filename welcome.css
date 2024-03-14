@@ -177,7 +177,9 @@ nav {
   margin-right: 13px;
 }
 
-.loginbutton:hover, .signupbutton:hover, #closePopup{
+.loginbutton:hover,
+.signupbutton:hover,
+#closePopup {
   cursor: pointer;
 }
 
@@ -501,13 +503,13 @@ strong {
   animation-iteration-count: infinite;
 }
 
-.section2images{
+.section2images {
   overflow: hidden;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
 }
 
-.section2images img{
+.section2images img {
   margin: 0;
   padding: 0;
 }
@@ -516,11 +518,12 @@ strong {
   margin-left: -5px;
 }
 
-@keyframes marquee{
-  0%{
+@keyframes marquee {
+  0% {
     transform: translateX(100%);
   }
-  100%{
+
+  100% {
     transform: translateX(-100%);
   }
 }
@@ -733,9 +736,9 @@ strong {
 .section3divh2 {
   display: flex;
   flex-direction: row;
-  background-image: url("https://lh3.googleusercontent.com/proxy/vdVeiL8gKbLFyU3N6ZNkEggMEJCb1_e4FuxwGWlLUq0t2zYNcDQVTRR1ai6zhVIO4PnF-9OY2m-J7d0DazG9UGDUK_RyjF_QXAZH5FMuUo5_6McLNU2x-DRTsZ4ykG6YWOwkNtbXeUwzex-07g");
+  background-image: url("https://i.pinimg.com/736x/5d/10/a0/5d10a0c14484791793c79ebf0aca86b7.jpg");
   background-repeat: no-repeat;
-  background-size: 23.5vw 50vh;
+  background-size: 34.5vw 50vh;
   background-blend-mode: lighten;
   align-content: center;
   justify-content: space-between;
@@ -743,7 +746,7 @@ strong {
 }
 
 .section3divh2text {
-  padding: 20px;
+  padding: 20px !important;
   background-color: transparent;
   line-height: 40px;
   display: flex;
@@ -761,7 +764,7 @@ strong {
 }
 
 .section3divh2text button {
-  padding: 17px 40px;
+  padding: 17px 40px !important;
   border-radius: 50px;
   cursor: pointer;
   border: 0;
@@ -772,7 +775,6 @@ strong {
   font-size: 15px;
   transition: all 0.5s ease;
   color: #efefef;
-
 }
 
 .section3divh2text button:hover {
@@ -814,7 +816,7 @@ strong {
   line-height: 50px;
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
+  padding-left: 100px !important;
   z-index: 1;
 }
 
@@ -841,8 +843,7 @@ strong {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px;
-
+  padding: 20px !important;
 }
 
 footer {
@@ -862,15 +863,16 @@ footer a {
   color: black;
 }
 
-.login{
+.login {
   display: none;
 }
 
-.signup{
+.signup {
   display: none;
 }
 
-.login,.signup{
+.login,
+.signup {
   position: fixed;
   top: 0;
   left: 0;
@@ -880,7 +882,7 @@ footer a {
   background-color: rgba(0, 0, 0, 0.164);
 }
 
-.structure{
+.structure {
   background-color: #fff;
   width: 50%;
   max-width: 500px;
@@ -891,7 +893,7 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  position: relative; 
+  position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -902,6 +904,15 @@ footer a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.login-form .structure {
+  text-align: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  transform: none;
+  top: 0%;
+  left: 0%;
+}
+
 .close {
   position: absolute;
   top: 10px;
@@ -910,19 +921,21 @@ footer a {
   font-size: 20px;
 }
 
-*{
+* {
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
 
-input, .but2{
+input,
+.but2 {
   padding-left: 10px !important;
 }
 
-nav a{
+nav a {
   padding: 10px !important;
 }
 
-.loginbuttonlabel, .signupbuttonlabel{
+.loginbuttonlabel,
+.signupbuttonlabel {
   padding: 8px 12px !important;
 }
