@@ -1,0 +1,18 @@
+.container .window{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    height: 50%;
+    width: 50%;
+}
+
+.window-content{
+    display: flex;
+
+}
+
+.window-img{
+    width: 600px;
+}
