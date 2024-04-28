@@ -11,16 +11,19 @@ const Card = (props) => {
   }
 
   return (
+    <>
     <div className="card">
       <img src={props.imageURL} onClick={toggle} className="card-img"/>
       <div className="caption">{props.caption}</div>
       <div className="user">
         <img src={PFP} className="usr-img"/>
         <h5>{Username}</h5>
-        { showWindow && <Window imageURL={props.imageURL} caption={props.caption} user={props.user} onClose={toggle}/> }
       </div>
     </div>
+    { showWindow && <Window imageURL={props.imageURL} caption={props.caption} user={props.user} toggle={toggle}/> }
+    </>
   );
 };
 
 export default Card;
+

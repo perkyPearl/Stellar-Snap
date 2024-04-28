@@ -12,7 +12,7 @@ const Home = () => {
       setLoginVisible(!loginVisible);
       setSignupVisible(false); // Hide signup container if login container is displayed
     };
-  
+
     const toggleSignup = () => {
       setSignupVisible(!signupVisible);
       setLoginVisible(false); // Hide login container if signup container is displayed
@@ -72,7 +72,7 @@ const Home = () => {
             Forgot your password?
           </a>
           <center>
-            <button className="but1" onclick="login()">
+            <button className="but1" onclick="">
               Log in
             </button>
           </center>
@@ -285,7 +285,7 @@ const Home = () => {
               and inspire others
             </h2>
           </div>
-          <Login/>
+          <Login toggle={toggleLogin} />
         </section>
       </div>
       <footer>

@@ -1,18 +1,48 @@
-.container .window{
+.window{
+    margin-top: 50px;
     position: fixed;
     top: 50%;
     left: 50%;
+    border-radius: 20px;
     transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.525);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.window-info-area{
     background-color: white;
-    height: 50%;
-    width: 50%;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close{
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+}
+
+.close:hover{
+    cursor: pointer;
 }
 
 .window-content{
     display: flex;
-
+    height: 100%;
 }
 
-.window-img{
-    width: 600px;
+.image-container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.window-image{
+    width: 750px;
 }

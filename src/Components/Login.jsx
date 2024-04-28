@@ -2,11 +2,11 @@ import React from "react";
 import "./Login.css";
 import Logo from "../images/logo.png";
 
-const Login = () => {
+const Login = (props) => {
   return (
     <>
       <div className="login-container">
-        <span className="close" id="closePopup">
+        <span className="close" id="closePopup" onClick={props.toggle}>
           ×
         </span>
         <div>
@@ -22,7 +22,7 @@ const Login = () => {
             Forgot your password?
           </a>
           <br />
-          <button className="but1">Log in</button>
+          <a href="/feed" className="login-Button">Log in</a>
 
           <p>OR</p>
 
