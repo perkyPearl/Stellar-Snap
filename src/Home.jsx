@@ -10,12 +10,12 @@ const Home = () => {
   
     const toggleLogin = () => {
       setLoginVisible(!loginVisible);
-      setSignupVisible(false); // Hide signup container if login container is displayed
+      setSignupVisible(false); 
     };
 
     const toggleSignup = () => {
       setSignupVisible(!signupVisible);
-      setLoginVisible(false); // Hide login container if signup container is displayed
+      setLoginVisible(false);
     };
   
     const closeContainers = () => {
@@ -54,62 +54,6 @@ const Home = () => {
           </div>
         </nav>
       </header>
-      <div className="login">
-        <span className="close" id="closePopup">
-          ×
-        </span>
-        <div className="structure">
-          <center>
-            <img src="images/logo.png" alt="" height={100} className="img1" />
-          </center>
-          <h1 className="head1">Welcome to Stellar Snap</h1>
-          <p className="para1">Email</p>
-          <input type="email" placeholder="Email" className="input1" />
-          <p className="para2">Password</p>
-          <input type="password" placeholder="Password" className="input2" />
-          <br />
-          <a href="#" className="anchor1">
-            Forgot your password?
-          </a>
-          <center>
-            <button className="but1" onclick="">
-              Log in
-            </button>
-          </center>
-          <p className="para3">OR</p>
-          <center></center>
-          <center>
-            <button className="but2">
-              {" "}
-              <img
-                className="img"
-                src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/U7MAWJlE6hZ.png"
-                alt=""
-                width={24}
-                height={24}
-              />
-              Continue with Facebook
-            </button>
-          </center>
-          <pre className="pre1">
-            By continuing, you agree to Pinterest's {"\n"}
-            <b className="bold1">Terms of Service</b> and acknowledge you've
-            read our {"\n"}
-            <b className="bold1"> Privacy Policy. Notice at collection.</b>{" "}
-            {"\n"}
-            {"      "}
-          </pre>
-          <a href="#" className="anchor2">
-            Not on Pinterest yet? Sign up
-          </a>
-          <div className="div2">
-            Are you a business?{" "}
-            <a href="#" className="anchor3">
-              Get started here!
-            </a>
-          </div>
-        </div>
-      </div>
       <div className="signup">
         <span className="close" id="closePopup">
           ×
@@ -173,6 +117,7 @@ const Home = () => {
           </pre>
         </div>
       </div>
+      <div className="body">
       <div className="welcome-container">
         <section className="section1">
           <div className="welcomesection1">
@@ -285,9 +230,10 @@ const Home = () => {
               and inspire others
             </h2>
           </div>
-          <Login toggle={toggleLogin} />
+          { loginVisible && <Login toggle={toggleLogin} />}
         </section>
       </div>
+      </div> 
       <footer>
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>

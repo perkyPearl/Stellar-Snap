@@ -20,10 +20,11 @@ const Card = (props) => {
         <h5>{Username}</h5>
       </div>
     </div>
+
+    { true && Window}
     { showWindow && <Window imageURL={props.imageURL} caption={props.caption} user={props.user} toggle={toggle}/> }
     </>
   );
 };
 
 export default Card;
-

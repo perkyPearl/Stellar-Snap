@@ -6,12 +6,12 @@
 
 .login-container {
     position: fixed;
-    margin-top: 90px;
+    margin-top: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
-    width: 350px;
+    width: 400px;
     padding: 30px 50px 20px 50px;
     text-align: center;
     border-radius: 25px;
