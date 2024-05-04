@@ -24,7 +24,6 @@ const Window = (props) => {
           <h3 className="comments-heading">Comments:</h3>
           <div className="comments-area">
             <div className="comment">No Comments yet</div>
-            {/* More comments can be added dynamically */}
           </div>
           <div className="add-comment">
             <h3 className="add-comment-heading">Add your Comment:</h3>
@@ -40,3 +39,4 @@ const Window = (props) => {
 };
 
 export default Window;
+

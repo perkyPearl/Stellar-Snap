@@ -21,7 +21,6 @@ const Card = (props) => {
       </div>
     </div>
 
-    { true && Window}
     { showWindow && <Window imageURL={props.imageURL} caption={props.caption} user={props.user} toggle={toggle}/> }
     </>
   );
