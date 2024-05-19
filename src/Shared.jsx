@@ -9,7 +9,7 @@ import Login from "./Components/Login"
 const Post = () => {
   const { postId } = useParams();
   const [post, setPost] = useState(null);
-  const [showLogin, setShowLogin] = useState(false); // State to control login popup
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     const filteredPost = cardsData.find(card => card.id === parseInt(postId));

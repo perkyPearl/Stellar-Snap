@@ -902,10 +902,10 @@ footer a {
     left: 0%;
 }
 
-* {
+/* * {
     padding-left: 0 !important;
     margin-left: 0 !important;
-}
+} */
 
 input,
 .but2 {

@@ -6,7 +6,7 @@
 
 .structure {
     position: fixed;
-    z-index: 100;
+    z-index: 10000000;
     background-color: white;
     width: 484px;
     border-radius: 30px;

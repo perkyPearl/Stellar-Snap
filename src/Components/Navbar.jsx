@@ -3,10 +3,9 @@ import "./Navbar.css";
 import logo from "../images/logo.png";
 import notification from "../images/notification.svg";
 import user from "../images/user.jpg";
-import arrow from "../images/arrow-down.png";
 import messaging from "../images/messaging.png";
 
-const Navbar = () => {
+const Navbar = (mode) => {
   return (
     <header>
       <nav>
@@ -19,7 +18,11 @@ const Navbar = () => {
         <img src={notification} alt="notification" id="notification" />
         <img src={messaging} alt="" id="messaging" />
         <img src={user} alt="" id="user-profile" />
-        <img src={arrow} id="arrow-down" />
+        { mode == 'logout' ? (
+          <button className="logoutButton"> Logout </button>
+        ) : (
+          <button className="loginButton"> Login </button>
+        )}
       </nav>
     </header>
   );

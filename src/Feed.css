@@ -58,7 +58,6 @@ nav a {
 }
 
 #arrow-down:hover {
-    /* background-color: 8px solid rgba(214, 214, 214, 0.388); */
     border: 8px solid white;
     transform: scale(0.8);
 }
