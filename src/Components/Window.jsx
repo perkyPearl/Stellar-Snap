@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./Window.css";
 
 const Window = ({ post, toggle }) => {
-  const [comment, setComment] = useState(""); // State to store the comment
-  const [comments, setComments] = useState([]); // State to store submitted comments
-  const [likes, setLikes] = useState(0); // State to store the number of likes
+  const [comment, setComment] = useState("");
+  const [comments, setComments] = useState([]); 
+  const [likes, setLikes] = useState(0); 
 
   useEffect(() => {
-    // Initialize likes and comments from post data
     setLikes(post.likes);
     setComments(post.comments);
   }, [post]);
@@ -27,7 +26,7 @@ const Window = ({ post, toggle }) => {
       id: Date.now(),
       text: comment,
       user: "Anonymous",
-      userImage: "", // This can be replaced with a proper anonymous image URL if available
+      userImage: "",
     };
 
     setComments([...comments, newComment]);
