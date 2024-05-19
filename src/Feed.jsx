@@ -18,7 +18,7 @@ const Feed = () => {
   const shuffledData = shuffleArray(Data);
   return (
     <>
-      <Navbar />
+      <Navbar mode="logout"/>
       <div className="container">
         {shuffledData.map((data) => (
           <Card key={data.id} post={data} user={Users[0]} />

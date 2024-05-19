@@ -223,10 +223,6 @@ section {
     align-items: center;
 }
 
-/* html {
-    scroll-snap-type: y mandatory;
-  } */
-
 .container {
     width: 100%;
 }
@@ -236,7 +232,6 @@ section {
 }
 
 .container section {
-    /* height: 100vh; */
     scroll-snap-align: start;
     align-items: center;
 }
@@ -249,38 +244,11 @@ section {
     background-color: rgba(90, 87, 87, 0.541);
 }
 
-/* .container section:nth-of-type(3) {
-    background-color: rgb(0, 255, 17);
-  } */
-
-/* .container section:nth-of-type(4) { */
-/* background-color: rgb(21, 0, 255); */
-/* } */
 .welcomesection1h1 {
     font-weight: 400;
     font-size: 50px;
     text-align: center;
 }
-
-/* .rowdies-light {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .rowdies-regular {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rowdies-bold {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  } */
-
-
 
 .section1 {
     background-image: url(https://wallpapercave.com/wp/wp5133714.jpg);
@@ -289,8 +257,6 @@ section {
     align-items: center;
     display: flex;
     height: 100vh;
-
-
 }
 
 .welcomesection1 {
@@ -313,10 +279,6 @@ section {
     color: transparent;
     background-color: #FFDEE9;
     background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-    /* background-image: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%); */
-    /* filter: drop-shadow(  15 16 white); */
-
-
 }
 
 .welcomesection1 h2 {
@@ -901,11 +863,6 @@ footer a {
     top: 0%;
     left: 0%;
 }
-
-/* * {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-} */
 
 input,
 .but2 {

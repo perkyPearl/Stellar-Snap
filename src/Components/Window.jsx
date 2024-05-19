@@ -73,7 +73,7 @@ const Window = ({ post, toggle }) => {
           <div>
             <div className="interaction-buttons">
               <button className="like-btn" onClick={handleLike}>Like</button>
-              <button className="comment-btn">Comment</button>
+              <label className="comment-btn" htmlFor="comment-box">Comment</label>
               <button className="share-btn" onClick={handleShare}>
                 Share
               </button>
@@ -84,6 +84,7 @@ const Window = ({ post, toggle }) => {
                 <input 
                   type="text" 
                   placeholder="Write your comment here" 
+                  id="comment-box"
                   value={comment}
                   onChange={handleCommentChange}
                 />

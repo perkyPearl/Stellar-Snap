@@ -29,6 +29,19 @@ body {
     margin-right: 13px;
 }
 
+.loginButton{
+    border-radius: 40px;
+    background-color: #8F51EA;
+    border: none;
+    width: fit-content;
+    padding: 12px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 13px;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -80,7 +93,7 @@ nav img {
     border: 0px;
     background-color: rgb(192, 192, 192);
     padding: 10px;
-    width: 100%;
+    width: 61% !important;
     border-radius: 16px;
     margin-left: 0px;
 }

@@ -5,7 +5,13 @@ import notification from "../images/notification.svg";
 import user from "../images/user.jpg";
 import messaging from "../images/messaging.png";
 
-const Navbar = (mode) => {
+const Navbar = (props) => {
+
+  const handleLogout = () => {
+    localStorage.setItem("LoggedIn","NULL");
+    window.location.href = "/";
+  }
+
   return (
     <header>
       <nav>
@@ -17,11 +23,13 @@ const Navbar = (mode) => {
         {/* <button id="SearchButton">Search</button> */}
         <img src={notification} alt="notification" id="notification" />
         <img src={messaging} alt="" id="messaging" />
-        <img src={user} alt="" id="user-profile" />
-        { mode == 'logout' ? (
-          <button className="logoutButton"> Logout </button>
+        { props.mode == 'logout' ? (
+          <>
+            <img src={user} alt="" id="user-profile" />
+            <button className="logoutButton" onClick={handleLogout}> Logout </button>
+          </>
         ) : (
-          <button className="loginButton"> Login </button>
+          <button className="loginButton"> Log In </button>
         )}
       </nav>
     </header>
