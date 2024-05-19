@@ -6,7 +6,7 @@ const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-4
+
   const handleLogin = (e) => {
     e.preventDefault();
 
