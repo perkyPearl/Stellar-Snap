@@ -1,21 +1,22 @@
+// Feed.jsx
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Card from "./Components/card";
 import Data from "./Data";
 import Users from "./Users";
-import "./Feed.css"
+import "./Feed.css";
 
-const feed = () => {
+const Feed = () => {
   return (
     <>
       <Navbar />
       <div className="container">
-        {Data.map(data => (
-          <Card key={data.id} imageURL={data.image_src} caption={data.caption} user={Users[0]} />
+        {Data.map((data) => (
+          <Card key={data.id} post={data} user={Users[0]} />
         ))}
       </div>
     </>
   );
 };
 
-export default feed;
+export default Feed;
