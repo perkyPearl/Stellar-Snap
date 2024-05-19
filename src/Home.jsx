@@ -5,7 +5,6 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 
 const Home = () => {
-  // State to manage visibility of login and signup containers
   const [loginVisible, setLoginVisible] = useState(false);
   const [signupVisible, setSignupVisible] = useState(false);
 
@@ -17,11 +16,6 @@ const Home = () => {
   const toggleSignup = () => {
     setSignupVisible(!signupVisible);
     setLoginVisible(false);
-  };
-
-  const closeContainers = () => {
-    setLoginVisible(false);
-    setSignupVisible(false);
   };
 
   return (
@@ -74,7 +68,7 @@ const Home = () => {
               </h2>
               <center>
                 <button className="btn">
-                  <strong>Explore Now</strong>
+                  <strong onClick={toggleSignup}>Explore Now</strong>
                   <div id="container-stars">
                     <div id="stars" />
                   </div>
@@ -174,7 +168,7 @@ const Home = () => {
               </h2>
             </div>
             {loginVisible && <Login toggle={toggleLogin} />}
-            {signupVisible && <Signup toggle={toggleLogin} />}
+            {signupVisible && <Signup toggle={toggleSignup} />}
           </section>
         </div>
       </div>

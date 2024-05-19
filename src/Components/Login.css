@@ -18,6 +18,13 @@
     z-index: 10000;
 }
 
+.close {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
 .login-container .close {
     position: absolute;
     top: 2px;

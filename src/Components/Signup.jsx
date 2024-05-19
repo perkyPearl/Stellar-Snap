@@ -9,38 +9,38 @@ const Signup = (props) => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-
+  
     const newUser = {
       email: email,
       password: password,
       birthdate: birthdate,
     };
-
+  
     try {
       const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
-
-      const userExists = existingUsers.some(user => user.email === email);
+  
+      const userExists = existingUsers.some((user) => user.email === email);
       if (userExists) {
         setError("User with this email already exists.");
-        return;
+        return; 
       }
-
+  
       const updatedUsers = [...existingUsers, newUser];
-
+  
       localStorage.setItem("users", JSON.stringify(updatedUsers));
-
+  
       window.location.href = "/";
     } catch (error) {
       setError("An error occurred. Please try again.");
     }
-  };
+  };  
 
   return (
     <div className="signup">
-      <span className="close" id="closePopup" onClick={props.toggle}>
-        ×
-      </span>
       <div className="structure">
+      <span className="close" id="closePopup" onClick={props.toggle}>
+        &times;
+      </span>
         <center>
           <img src="images/logo.png" alt="" height={100} className="img1" />
         </center>

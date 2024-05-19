@@ -9,18 +9,22 @@ const Login = (props) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
+  
     try {
       const users = JSON.parse(localStorage.getItem("users")) || [];
-
+  
       let user = null;
-
-      for(let i=0;i<users.length;i++){
-        console.log(users[i].email == email, users[i].password == password)
+  
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].email === email && users[i].password === password) {
+          user = users[i];
+          break;
         }
+      }
+  
       if (user) {
         localStorage.setItem("authToken", JSON.stringify({ email: user.email }));
-        window.location.href = "/feed";
+        window.location.href = "/feed"; // Redirect to feed page
       } else {
         setError("Invalid email or password.");
       }
@@ -32,10 +36,10 @@ const Login = (props) => {
 
   return (
     <div className="login">
-      <span className="close" id="closePopup" onClick={props.toggle}>
-        ×
-      </span>
       <div className="structure">
+      <span className="close" id="closePopup" onClick={props.toggle}>
+        &times;
+      </span>
         <center>
           <img src={Logo} height="300px" id="logo" alt="Stellar Snap Logo" />
         </center>
