@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Window.css";
+import user from "../images/user.jpg";
 
 const Window = ({ post, toggle }) => {
   const [comment, setComment] = useState("");
@@ -50,7 +51,7 @@ const Window = ({ post, toggle }) => {
         </div>
         <div className="window-info-area">
           <div className="user-info-header">
-            <img src={post.user.PFP} className="userpfp-icon" alt="User Profile" />
+            <img src={user} className="userpfp-icon" alt="User Profile" />
             {post.user.Username}
           </div>
           <p className="caption-text">{post.caption}</p>

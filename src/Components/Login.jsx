@@ -14,17 +14,17 @@ const Login = (props) => {
       const users = JSON.parse(localStorage.getItem("users")) || [];
   
       let user = null;
-  
-      for (let i = 0; i < users.length; i++) {
+      let i=0;
+      for (i = 0; i < users.length; i++) {
         if (users[i].email === email && users[i].password === password) {
           user = users[i];
           break;
         }
       }
-  
+
       if (user) {
-        localStorage.setItem("authToken", JSON.stringify({ email: user.email }));
-        window.location.href = "/feed"; // Redirect to feed page
+        localStorage.setItem("authToken", JSON.stringify({ userID: i }));
+        window.location.href = "/feed"; 
       } else {
         setError("Invalid email or password.");
       }
