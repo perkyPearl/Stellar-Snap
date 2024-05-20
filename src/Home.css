@@ -805,6 +805,7 @@ strong {
     animation: fade-in 5s ease-in;
     animation-delay: 15s;
     animation-fill-mode: backwards;
+    padding-bottom: 20px;
 }
 
 .section4text h2 {
@@ -813,16 +814,16 @@ strong {
     animation: fade-in 5s ease-in;
     animation-delay: 20s;
     animation-fill-mode: backwards;
+    line-height: 50px;
 }
 
 .growing-container {
     background-color: #111111;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px !important;
 }
 
 footer {

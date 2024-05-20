@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rancho&display=swap');
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+#user-profile {
+    height: 28px;
+    width: 28px;
+}
+
+nav {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    height: 70px;
+}
+
+nav nav a,
+nav img {
+    margin: 10px;
+}
+
+.SearchArea {
+    display: flex;
+}
+
+#SearchBar {
+    border: 0px;
+    background-color: rgb(192, 192, 192);
+    padding: 12px;
+    width: 100%;
+    border-radius: 16px;
+    margin-left: 0px;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+
+#arrow-down {
+    padding: 0;
+}
+
+#arrow-down:hover {
+    /* background-color: 8px solid rgba(214, 214, 214, 0.388); */
+    border: 8px solid white;
+    transform: scale(0.8);
+}
+
+nav a {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a:nth-child(2) {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    color: white;
+}
+
+nav a:hover {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 15px;
+    color: white;
+}
+
+#notification {
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container .card {
+    min-width: 20%;
+    max-width: 30%;
+    height: 100%;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: rgb(121, 121, 121); */
+    border-radius: 10px;
+}
+
+.caption span {
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.user {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.user img {
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.container img:hover {
+    opacity: 80%;
+}
+
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#leftoptions {
+    display: flex;
+    margin: 0px 8px;
+    align-items: center;
+}
+
+#leftoptions img {
+    height: 120px;
+    width: 140px;
+}
+
+#logo{
+    height: 100px !important;
+    width: 100px !important;
+    margin: 0px 0px 10px 0px;
+}
+
+#rightoptions {
+    display: flex;
+}
+
+.optionscontainer {
+    padding: 12px 0px;
+    font-weight: 500;
+}
+
+.loginbutton {
+    border-radius: 40px;
+    background-color: #8F51EA;
+    width: fit-content;
+    padding: 2px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 13px;
+}
+
+.loginbutton:hover,
+.signupbutton:hover,
+#closePopup {
+    cursor: pointer;
+}
+
+.loginbuttonlabel {
+    color: white;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+.signupbutton {
+    border-radius: 40px;
+    background-color: #efefef;
+    width: fit-content;
+    padding: 2px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 13px;
+}
+
+.signupbuttonlabel {
+    color: #111111;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+
+.video-container {
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+  height: 748px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+.text-overlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: rgba(13, 13, 13, 0.038); */
+  align-items: center;
+  padding: 20px;
+
+}
+
+.text-overlay h1 {
+  margin-bottom: 0.5vh;
+  color: black;
+  font-size: 5vh;
+
+}
+.text-overlay h1 span{
+  font-size: 15vh;
+  /* transition: ease-out(00.3s); */
+}
+
+.text-overlay .txt {
+  font-size: 3vh;
+  color: black;
+  
+
+}
+
+.text-overlay .txt {
+  overflow:hidden;
+  white-space:nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* h2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+} */
+
+.explorebutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.cardcontainer{
+  position:relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin: 40px;
+}
+/* css to images of categories */
+.card{
+  display:grid;
+  gap: 30px;
+  font-size: 20px;
+  width: fit-content;
+  grid-template-areas: "ar ar ar";
+}
+
+.card img {
+  border-radius: 10%;
+  transition: all 0.3s ease-out;
+  height: 300px;
+  max-width: 400px;
+  gap: 30px;
+  grid-area: ar;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 90%;
+  border-radius: 5px;
+  box-shadow: 5px ;
+}
+
+button {
+  transition: all 0.3s ease-out;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  padding:10px;
+}
+
+button:hover {
+  transform: scale(1.0);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 40px 80px;
+  width: 100%;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  position: relative;
+  line-height: 30px;
+  gap: 5px;
+  margin-left: 5px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* padding: 10px 20px; */
+  line-height: 50px;
+}
+.bottom-links .links a i{
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1205px) {
+  .cardcontainer{
+    grid-template-columns: auto auto;
+  }
+  
+}
+
+@media screen and (max-width: 931px) {
+  .cardcontainer{
+    grid-template-columns: auto;
+  }
+  
+}
+.image-cell p{
+  font-family: Patrick Hand;
+}
+
+.title{
+  font-family: Rancho;
+  justify-self: center;
+  position: relative;
+}
+.team-card .container{
+  text-decoration: none;
+  color: black;
+  overflow:hidden;
+  
+}
+.td  {
+  display:grid;
+  gap: 30px;
+  font-size: 20px;
+  width: fit-content;
+  grid-template-areas: "ar ar ar";
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.team-card {
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    margin-bottom: 100px;
+}
+
+.team-card:hover {
+    transform: scale(1.2);
+    line-height: 40px;
+    src:"url=https://www.linkedin.com/in/prachi-anand-8173531a1  on-click";
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.team-card .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+
+.team-card h4 {
+    margin: 0;
+}
+
+.team-card h5 {
+    margin-top: 5px;
+    color: #888;
+}
