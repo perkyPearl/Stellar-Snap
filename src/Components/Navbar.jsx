@@ -8,7 +8,7 @@ import messaging from "../images/messaging.png";
 const Navbar = (props) => {
 
   const handleLogout = () => {
-    localStorage.setItem("LoggedIn","NULL");
+    localStorage.setItem("authToken","NULL");
     window.location.href = "/";
   }
 
@@ -20,7 +20,6 @@ const Navbar = (props) => {
         <a href="/explore">Explore</a>
         <a href="/create">Create</a>
         <input type="text" id="SearchBar" placeholder="Search" alt="Search" />
-        {/* <button id="SearchButton">Search</button> */}
         <img src={notification} alt="notification" id="notification" />
         <img src={messaging} alt="" id="messaging" />
         { props.mode == 'logout' ? (

@@ -206,6 +206,126 @@ const cardsData = [
       { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
     ]
   },
+  {
+    id: 21,
+    image_src: "/Uploaded Images/Image (10).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 22,
+    image_src: "/Uploaded Images/Image (11).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 23,
+    image_src: "/Uploaded Images/Image (12).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 24,
+    image_src: "/Uploaded Images/Image (13).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 25,
+    image_src: "/Uploaded Images/Image (14).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 26,
+    image_src: "/Uploaded Images/Image (15).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 27,
+    image_src: "/Uploaded Images/Image (16).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 28,
+    image_src: "/Uploaded Images/Image (17).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 29,
+    image_src: "/Uploaded Images/Image (18).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 30,
+    image_src: "/Uploaded Images/Image (19).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 31,
+    image_src: "/Uploaded Images/Image (20).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  },
+  {
+    id: 32,
+    image_src: "/Uploaded Images/Image (21).jpg",
+    caption: "Pixel Sky Night",
+    user: users[0],
+    likes: 29,
+    comments: [
+      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+    ]
+  }
 ];
 
 export default cardsData;
