@@ -1,9 +1,9 @@
 import React from "react";
-import Signup from "./Signup.jsx";
+import About from "./About";
 
 const Test = () => {
   return (
-    <Signup/>
+    <About/>
   );
 };
 
