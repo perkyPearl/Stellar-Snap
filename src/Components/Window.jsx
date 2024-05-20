@@ -4,13 +4,38 @@ import user from "../images/user.jpg";
 
 const Window = ({ post, toggle }) => {
   const [comment, setComment] = useState("");
-  const [comments, setComments] = useState([]); 
-  const [likes, setLikes] = useState(0); 
+  const [comments, setComments] = useState([]);
+  const [likes, setLikes] = useState(0);
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
-    setLikes(post.likes);
-    setComments(post.comments);
+    const storedComments = localStorage.getItem(`comments_${post.id}`);
+    if (storedComments) {
+      setComments(JSON.parse(storedComments));
+    }
+
+    const storedLikes = localStorage.getItem(`likes_${post.id}`);
+    if (storedLikes) {
+      setLikes(JSON.parse(storedLikes));
+    }
+
+    const storedLiked = localStorage.getItem(`liked_${post.id}`);
+    if (storedLiked) {
+      setLiked(JSON.parse(storedLiked));
+    }
   }, [post]);
+
+  useEffect(() => {
+    localStorage.setItem(`comments_${post.id}`, JSON.stringify(comments));
+  }, [comments, post]);
+
+  useEffect(() => {
+    localStorage.setItem(`likes_${post.id}`, JSON.stringify(likes));
+  }, [likes, post]);
+
+  useEffect(() => {
+    localStorage.setItem(`liked_${post.id}`, JSON.stringify(liked));
+  }, [liked, post]);
 
   const handleShare = () => {
     const postId = post.id;
@@ -36,7 +61,12 @@ const Window = ({ post, toggle }) => {
   };
 
   const handleLike = () => {
-    setLikes(likes + 1);
+    if (liked) {
+      setLikes(likes - 1);
+    } else {
+      setLikes(likes + 1);
+    }
+    setLiked(!liked);
   };
 
   return (
@@ -65,7 +95,7 @@ const Window = ({ post, toggle }) => {
                   <img src={comment.userImage} className="comment-user-image" alt="User Profile" />
                 )}
                 {!comment.userImage && (
-                  <img src="./images/anonymous Profile Icon.jpg" className="comment-user-image" />
+                  <img src="./images/anonymous Profile Icon.jpg" className="comment-user-image" alt="Anonymous Profile" />
                 )}
                 <p>{comment.user}: {comment.text}</p>
               </div>
@@ -73,11 +103,9 @@ const Window = ({ post, toggle }) => {
           </div>
           <div>
             <div className="interaction-buttons">
-              <button className="like-btn" onClick={handleLike}>Like</button>
+              <button className="like-btn" onClick={handleLike}>{liked ? "Liked" : "Like"}</button>
               <label className="comment-btn" htmlFor="comment-box">Comment</label>
-              <button className="share-btn" onClick={handleShare}>
-                Share
-              </button>
+              <button className="share-btn" onClick={handleShare}>Share</button>
             </div>
             <div className="add-comment">
               <h3 className="add-comment-heading">Add your Comment:</h3>
@@ -89,9 +117,7 @@ const Window = ({ post, toggle }) => {
                   value={comment}
                   onChange={handleCommentChange}
                 />
-                <button className="submit-btn" onClick={handleSubmitComment}>
-                  Submit
-                </button>
+                <button className="submit-btn" onClick={handleSubmitComment}>Submit</button>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { json } from "react-router-dom";
 import users from "./Users";
 
 const cardsData = [
@@ -209,7 +210,7 @@ const cardsData = [
   {
     id: 21,
     image_src: "/Uploaded Images/Image (10).jpg",
-    caption: "Pixel Sky Night",
+    caption: "No One can Stop me",
     user: users[0],
     likes: 29,
     comments: [
@@ -219,7 +220,7 @@ const cardsData = [
   {
     id: 22,
     image_src: "/Uploaded Images/Image (11).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Creative 🌟",
     user: users[0],
     likes: 29,
     comments: [
@@ -229,7 +230,7 @@ const cardsData = [
   {
     id: 23,
     image_src: "/Uploaded Images/Image (12).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Weird as Hell 💀💀",
     user: users[0],
     likes: 29,
     comments: [
@@ -239,17 +240,17 @@ const cardsData = [
   {
     id: 24,
     image_src: "/Uploaded Images/Image (13).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Mountains 🗻🗻",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "Love the View!", user: "User25", userImage: "" },
     ]
   },
   {
     id: 25,
     image_src: "/Uploaded Images/Image (14).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Hope 🤞🏻🤞🏻",
     user: users[0],
     likes: 29,
     comments: [
@@ -269,7 +270,7 @@ const cardsData = [
   {
     id: 27,
     image_src: "/Uploaded Images/Image (16).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Never Settle",
     user: users[0],
     likes: 29,
     comments: [
@@ -279,53 +280,59 @@ const cardsData = [
   {
     id: 28,
     image_src: "/Uploaded Images/Image (17).jpg",
-    caption: "Pixel Sky Night",
+    caption: "",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "IKGEA in one Frame", user: "User25", userImage: "" },
     ]
   },
   {
     id: 29,
     image_src: "/Uploaded Images/Image (18).jpg",
-    caption: "Pixel Sky Night",
+    caption: "🎶🎶",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "Nice Photograph", user: "User25", userImage: "" },
     ]
   },
   {
     id: 30,
     image_src: "/Uploaded Images/Image (19).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Moment ✨",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "💓💓", user: "User25", userImage: "" },
     ]
   },
   {
     id: 31,
     image_src: "/Uploaded Images/Image (20).jpg",
-    caption: "Pixel Sky Night",
+    caption: "We Rise....",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "Good Motivation to Start a Day!", user: "User25", userImage: "" },
     ]
   },
   {
     id: 32,
     image_src: "/Uploaded Images/Image (21).jpg",
-    caption: "Pixel Sky Night",
+    caption: "Street Smile :)",
     user: users[0],
     likes: 29,
     comments: [
-      { id: 25, text: "Pixel perfect!", user: "User25", userImage: "" },
+      { id: 25, text: "Wanted to see on Footpath Someday...", user: "User25", userImage: "" },
     ]
   }
 ];
+
+const cardsDataString = JSON.stringify(cardsData);
+
+if(!localStorage.getItem('cardsData')){
+  localStorage.setItem('cardsData', cardsDataString);
+}
 
 export default cardsData;
