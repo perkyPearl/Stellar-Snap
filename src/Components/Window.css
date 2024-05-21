@@ -21,6 +21,12 @@ html, body {
     overflow: hidden;
 }
 
+.comment-user-image{
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 .window img:hover{
     opacity: 100% !important; 
 }

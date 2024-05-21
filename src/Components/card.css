@@ -6,7 +6,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    /* height: 1000px; */
     padding: 5px;
     background-color: var(--cardColor);
     border-radius: 10px;

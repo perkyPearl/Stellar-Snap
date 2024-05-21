@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Window.css";
 import user from "../images/user.jpg";
+import anonymousUser from "../images/User Image.jpg"
 
 const Window = ({ post, toggle }) => {
   const [comment, setComment] = useState("");
@@ -95,7 +96,7 @@ const Window = ({ post, toggle }) => {
                   <img src={comment.userImage} className="comment-user-image" alt="User Profile" />
                 )}
                 {!comment.userImage && (
-                  <img src="./images/anonymous Profile Icon.jpg" className="comment-user-image" alt="Anonymous Profile" />
+                  <img src={anonymousUser} className="comment-user-image"  />
                 )}
                 <p>{comment.user}: {comment.text}</p>
               </div>

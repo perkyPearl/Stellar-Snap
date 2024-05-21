@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Acme');
+/* @import url('https://fonts.googleapis.com/css?family=Acme');
 @import url('https://fonts.googleapis.com/css?family=Pangolin');
 @import url('https://fonts.googleapis.com/css?family=Signika');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css');
@@ -6,7 +6,6 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rancho&display=swap');
-
 
 header {
     position: sticky;
@@ -57,7 +56,6 @@ nav a {
 }
 
 #arrow-down:hover {
-    /* background-color: 8px solid rgba(214, 214, 214, 0.388); */
     border: 8px solid white;
     transform: scale(0.8);
 }
@@ -105,7 +103,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* background-color: rgb(121, 121, 121); */
     border-radius: 10px;
 }
 
@@ -236,7 +233,6 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* background-color: rgba(13, 13, 13, 0.038); */
   align-items: center;
   padding: 20px;
 
@@ -250,7 +246,6 @@ video {
 }
 .text-overlay h1 span{
   font-size: 15vh;
-  /* transition: ease-out(00.3s); */
 }
 
 .text-overlay .txt {
@@ -270,8 +265,6 @@ video {
     blink-caret .75s step-end infinite;
 }
 
-
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0
@@ -281,13 +274,6 @@ video {
     width: 100%
   }
 }
-
-/* h2 {
-  padding: 30px;
-  text-align: center;
-  font-size: 2rem;
-  color: black;
-} */
 
 .explorebutton {
   display: inline-block;
@@ -312,7 +298,6 @@ h4 {
   gap: 30px;
   margin: 40px;
 }
-/* css to images of categories */
 .card{
   display:grid;
   gap: 30px;
@@ -395,7 +380,6 @@ button:hover {
   display: flex;
   align-items: center;
   position: relative;
-  /* padding: 10px 20px; */
   line-height: 50px;
 }
 .bottom-links .links a i{
@@ -490,4 +474,4 @@ button:hover {
 .team-card h5 {
     margin-top: 5px;
     color: #888;
-}
+} */
