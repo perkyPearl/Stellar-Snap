@@ -8,6 +8,7 @@ const Feed = () => {
   
   const shuffleArray = (array) => {
     let shuffledArray = array.slice();
+    console.log(shuffledArray)
     for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       const temp = shuffledArray[i];

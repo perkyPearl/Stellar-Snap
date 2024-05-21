@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Home.css";
 import logo from "./images/logo.png";
 import Login from "./Components/Login";
-import user from "./images/user.jpg";
 import Signup from "./Components/Signup";
 
 const Home = () => {
