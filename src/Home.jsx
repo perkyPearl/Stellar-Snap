@@ -41,7 +41,7 @@ const Home = () => {
           </div>
           <div id="rightoptions">
             <div className="optionscontainer">
-              <a href="#">About</a>
+              <a href="/about">About</a>
               <a href="#">Business</a>
               <a href="#">Blog</a>
             </div>
